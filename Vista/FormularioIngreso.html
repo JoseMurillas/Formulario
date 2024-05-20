@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Formulario Ingreso</title>
+        <link rel="stylesheet" href="FormularioIngreso.css">
+    </head>
+    <body>
+        <h1>FORMULARIO DE DATOS PARA INGRESO</h1>
+        <div class="formato">
+            <form action="../Controlador/LogicaNegocio.php" method="get">
+                <h3>Ingrese Nombre:</h3>
+                <input type="text" name="nombre" id="campos">
+                
+                <h3>Ingrese Apellido:</h3> 
+                <input type="text" name="apellido" id="campos">
+                
+                <h3>Ingrese Edad:</h3>
+                <input type="number" name="edad" id="campos">
+                
+                <h3>Ingrese documento:</h3>
+                <input type="text" name="documento" id="campos">
+                
+                <h3>Curso al que aspira:</h3>
+                <select name="opciones" id="campos">
+                    <option value='ADSI'>ADSI</option>
+                    <option value='ARC'>ARC</option>
+                    <option value='TAi'>TAI</option>
+                    <option value='MEI'>MEI</option>
+                    <option value='TPS'>TPS</option>
+                    <option value='MEC'>MEC</option>
+                </select>
+                
+                <br>
+                <input type="hidden" value="1" name="form">
+                <input type="submit" value="Enviar" >
+                
+             </form>
+        </div>
+    </body>
+</html>
